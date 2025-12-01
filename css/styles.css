@@ -1,0 +1,28 @@
+nav button {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+nav button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+iframe {
+    border: none;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forecast{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(100px, 1fr);
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
