@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         btnBack.addEventListener('click', () => {
             localStorage.removeItem("mostrarBackBtn");
-            window.location.href = '../index.html';
+            window.location.href = '/index.html';
         });
 
         document.body.appendChild(btnBack);
@@ -80,5 +80,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 })();
 document.getElementById('btn-regresar').addEventListener('click', () => {
-    window.location.href = '../index.html';
+    window.location.href = '/index.html';
 });

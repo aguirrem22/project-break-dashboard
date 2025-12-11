@@ -1,16 +1,16 @@
 const bg = document.getElementById("backgroundIMG");
 
 const photos = [
-    "./img/img1.jpg",
-    "./img/img2.jpg",
-    "./img/img3.jpg",
-    "./img/img4.jpg",
-    "./img/img5.jpg",
-    "./img/img6.jpg",
-    "./img/img7.jpg",
-    "./img/img8.jpg",
-    "./img/img9.jpg",
-    "./img/img10.jpg",
+    "img1.jpg",
+    "img2.jpg",
+    "img3.jpg",
+    "img4.jpg",
+    "img5.jpg",
+    "img6.jpg",
+    "img7.jpg",
+    "img8.jpg",
+    "img9.jpg",
+    "img10.jpg",
 ];
 
 function changeBackground() {
@@ -20,12 +20,12 @@ function changeBackground() {
     setTimeout(() => {
 
         const random = Math.floor(Math.random() * photos.length);
-        bg.style.backgroundImage = `url(${photos[random]})`;
+        bg.style.backgroundImage = `url(/img/${photos[random]})`;
 
-        // fade in
+
         bg.classList.remove("fade");
 
-    }, 1800); 
+    }, 1800);
 }
 
 changeBackground();

@@ -82,7 +82,7 @@ if (localStorage.getItem("desdeIndex") === "true") {
 
     btn.onclick = () => {
         localStorage.removeItem("desdeIndex");
-        window.location.href = "../index.html";
+        window.location.href = "/index.html";
     };
 
     document.body.appendChild(btn);
@@ -103,5 +103,5 @@ if (localStorage.getItem("desdeIndex") === "true") {
     }
 })();
 document.getElementById('btn-regresar').addEventListener('click', () => {
-    window.location.href = '../index.html';
+    window.location.href = '/index.html';
 });
