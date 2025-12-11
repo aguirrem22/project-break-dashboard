@@ -1,9 +1,7 @@
-
 function navegar(ruta) {
     localStorage.setItem("mostrarBackBtn", "true");
     window.location.href = ruta;
 }
-
 
 document.getElementById('relojnav').addEventListener('click', () => {
     window.top.location.href = '../pages/reloj.html';

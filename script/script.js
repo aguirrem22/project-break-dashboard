@@ -35,8 +35,6 @@ document.querySelector(".prev").onclick = () => {
 updateCarousel();
 
 const bg2 = document.getElementById("background");
-
-
 const photos = [
     "img1.jpg",
     "img2.jpg",

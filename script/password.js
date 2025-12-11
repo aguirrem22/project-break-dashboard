@@ -23,8 +23,6 @@ function generarContraseña() {
 
 
 }
-
-
 (function () {
     const params = new URLSearchParams(location.search);
     const target = params.get('view') || 'passwordSec';

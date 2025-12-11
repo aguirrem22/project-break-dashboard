@@ -49,13 +49,11 @@ function addLink() {
     savedLinks.push({ name, url });
     localStorage.setItem('links', JSON.stringify(savedLinks));
 
-
     nameInput.value = "";
     urlInput.value = "";
 
     renderLinks();
 }
-
 
 addLinkButton.addEventListener('click', addLink);
 

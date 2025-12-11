@@ -37,7 +37,6 @@ function actualizarReloj() {
         mensaje = "Tu entreno ha terminado guerrero , a descansar y recargar energías para mañana"
     }
     document.getElementById('mensaje').textContent = mensaje
-
 }
 setInterval(actualizarReloj, 1000)
 actualizarReloj()
@@ -55,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
-
 
 (function () {
     const params = new URLSearchParams(location.search);

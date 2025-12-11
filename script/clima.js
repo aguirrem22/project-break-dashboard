@@ -64,9 +64,6 @@ html += `
 `;
         
         document.getElementById('clima').innerHTML=html
-
-
-
     }
     catch (Error) {
         console.error(Error);
@@ -100,7 +97,7 @@ if (localStorage.getItem("desdeIndex") === "true") {
         document.querySelectorAll('.view').forEach(el => {
             el.style.display = 'block';  
 
-            
+
         });
     }
 })();
