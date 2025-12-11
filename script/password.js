@@ -39,5 +39,8 @@ function generarContraseña() {
     }
 })();
 document.getElementById('btn-regresar').addEventListener('click', () => {
-    window.location.href = '';
+    window.location.href = '/project-break-Marco/index.html'
 });
+
+
+
