@@ -98,7 +98,9 @@ if (localStorage.getItem("desdeIndex") === "true") {
     if (el) el.classList.add('show');
     if (!location.hash) {
         document.querySelectorAll('.view').forEach(el => {
-            el.style.display = 'block';
+            el.style.display = 'block';  
+
+            
         });
     }
 })();
