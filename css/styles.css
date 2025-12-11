@@ -833,6 +833,7 @@ carrusel responsive
 .generadorContraseñas,
 
 .contenedorUrl {
+    display: flex;
     width: 100%;
     max-width: 95%;
     margin: 20px auto;
