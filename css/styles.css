@@ -165,7 +165,7 @@ nav button i {
 
 body:not(:has(:target)) #buscadorSec {
 
-    /display: block;
+    display: block;
 }
 
 .card-carousel {
