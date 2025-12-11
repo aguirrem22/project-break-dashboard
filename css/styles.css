@@ -59,19 +59,17 @@ nav button i {
     margin-bottom: 10px;
     transition: background-color 0.3s ease;
 }
+
 .regresar:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.headerNav{
+.headerNav {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
-
-
 
 /* fondos imagenes */
 #backgroundIMG {
@@ -165,10 +163,10 @@ nav button i {
 }
 
 
-/* body:not(:has(:target)) #buscadorSec{
+body:not(:has(:target)) #buscadorSec {
 
-    /* display: block; */
-/* } */
+    /display: block;
+}
 
 .card-carousel {
     position: relative;
@@ -328,10 +326,11 @@ nav button i {
     width: 90%;
     max-width: 600px;
     background: rgba(0, 0, 0, 0.26);
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 25px;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 /* Fin estilos reloj */
@@ -339,6 +338,7 @@ nav button i {
 #clima {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .weather-header h2 {
@@ -533,7 +533,7 @@ nav button i {
     font-size: px;
 }
 
-#link-añadido li{
+#link-añadido li {
     color: #00ff00;
     font-weight: bold;
     margin-top: 10px;
@@ -552,6 +552,7 @@ nav button i {
     color: #ffffff;
     padding-right: 20px;
 }
+
 #link-añadido button {
     background-color: #ff4d4d2a;
     border: none;
@@ -565,6 +566,7 @@ nav button i {
     border-radius: 5px;
     cursor: pointer;
 }
+
 #link-añadido button:hover {
     background-color: #ff1a1a;
 }
@@ -596,7 +598,7 @@ nav button i {
     backdrop-filter: blur(6px);
 }
 
-/* animación sutil de color oscuro (loop) */
+/* animación color oscuro */
 @keyframes darkShift {
     0% {
         background: linear-gradient(135deg, #0f0f10, #1b1b1f);
@@ -659,10 +661,9 @@ nav button i {
         box-shadow: 0 0 8px rgba(50, 50, 50, 0.4);
     }
 }
+
 /* responsive */
-/* =======================================
-   RESET GENERAL
-======================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -679,9 +680,9 @@ iframe {
     border: none;
 }
 
-/* =======================================
+/* 
    FONDO
-======================================= */
+ */
 #backgroundIMG {
     position: fixed;
     inset: 0;
@@ -691,9 +692,9 @@ iframe {
     filter: brightness(0.8);
 }
 
-/* =======================================
-   CONTENEDOR PRINCIPAL
-======================================= */
+/* 
+   contenedor principal responsive
+ */
 .contenedor-principal {
     width: 100%;
     margin-top: 20px;
@@ -702,19 +703,19 @@ iframe {
     align-items: center;
 }
 
-.contenedor-principal > iframe {
+.contenedor-principal>iframe {
     width: min(95%, 900px);
     height: 80px;
     margin-bottom: 20px;
 }
 
-/* =======================================
-   CARRUSEL RESPONSIVE REAL
-======================================= */
+/* 
+   carrusel responsive
+ */
 
 .card-carousel {
     width: min(90%, 900px);
-    margin: 0 auto;
+    margin: 20px auto;
     position: relative;
     padding: 20px 40px;
     box-sizing: border-box;
@@ -725,6 +726,7 @@ iframe {
     display: flex;
     width: 100%;
     transition: transform 0.4s ease;
+
 }
 
 .card {
@@ -734,17 +736,20 @@ iframe {
     border-radius: 15px;
     overflow: hidden;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
 .card iframe {
     width: 100%;
     height: auto;
     min-height: 420px;
+
 }
 
-/* =======================================
-   FLECHAS DEL CARRUSEL
-======================================= */
+/* flechas carrusel */
 .nav {
     position: absolute;
     top: 50%;
@@ -753,8 +758,8 @@ iframe {
 
     width: 45px;
     height: 45px;
-    background: rgba(255,255,255,0.15);
-    border: 2px solid rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     color: white;
     border-radius: 12px;
     font-size: 25px;
@@ -768,24 +773,33 @@ iframe {
 }
 
 .nav:hover {
-    background: rgba(255,255,255,0.25);
+    background: rgba(255, 255, 255, 0.25);
 }
 
-.prev { left: 5px; }
-.next { right: 5px; }
+.prev {
+    left: 5px;
+}
 
-/* =======================================
-   TARJETAS INTERNAS (reloj, clima, URLs…)
-======================================= */
+.next {
+    right: 5px;
+}
+
+/* tarjetas resposive*/
 
 .horalocal,
 .generadorContraseñas,
-.climacard,
+
 .contenedorUrl {
     width: 100%;
     max-width: 95%;
     margin: 20px auto;
-    position:fixed;
+    position: fixed;
+}
+
+.climacard {
+    width: 100%;
+    max-width: 95%;
+    position: fixed;
 }
 
 #reloj {
@@ -800,7 +814,7 @@ iframe {
 }
 
 /* 
-   BOTÓN REGRESAR
+  boton regresar responsive
 */
 #back-btn {
     position: fixed;
@@ -815,7 +829,7 @@ iframe {
     border-radius: 50%;
     cursor: pointer;
 
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     backdrop-filter: blur(5px);
     z-index: 100;
@@ -848,7 +862,7 @@ iframe {
     }
 }
 
-/* ========== 768px — TABLET ========== */
+/* 768px — TABLET */
 @media (max-width: 768px) {
 
     .card-carousel {
@@ -861,7 +875,7 @@ iframe {
     }
 }
 
-/* ========== DESKTOP GRANDE 1200px+ ========== */
+/* pantalla grande  1200px+ */
 @media (min-width: 1200px) {
 
     .card-carousel {
@@ -877,6 +891,91 @@ iframe {
 
     .card iframe {
         min-height: 500px;
+
     }
 }
 
+/*responsive para clima independiente*/
+
+@media (max-width: 480px) {
+
+    /* contenedor general clima */
+    nav {
+        margin-bottom: 10%;
+    }
+
+    .climacard {
+        width: 95% !important;
+        max-width: 360px;
+        padding: 5px !important;
+        border-radius: 18px;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+       
+
+    }
+
+    div.climacard {
+        padding: 50px;
+    }
+
+    /* encabezado */
+    .weather-header h2 {
+        font-size: 1.4rem !important;
+    }
+
+    .weather-header p {
+        font-size: 0.9rem !important;
+    }
+
+    /* icono principal */
+    .icono-clima {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    /* temperatura grande */
+    .temp-num {
+        font-size: 2.4rem !important;
+    }
+
+    /* cuerpo clima reorganizado */
+    .weather-body {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 10px !important;
+    }
+
+    /* info extra */
+    .weather-extra p {
+        font-size: 0.9rem !important;
+        text-align: center !important;
+    }
+
+    /* pronóstico por horas */
+    .forecast {
+        margin-top: 15px;
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        scrollbar-width: none;
+    }
+
+    .forecast::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hour-card {
+        min-width: 70px !important;
+        padding: 8px !important;
+        border-radius: 12px;
+    }
+
+    .hour-card img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
