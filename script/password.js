@@ -39,5 +39,5 @@ function generarContraseña() {
     }
 })();
 document.getElementById('btn-regresar').addEventListener('click', () => {
-    window.location.href = '/index.html';
+    window.location.href = '';
 });

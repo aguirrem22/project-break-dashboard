@@ -57,7 +57,7 @@ function changeBackground2() {
     setTimeout(() => {
 
         const random = Math.floor(Math.random() * photos.length);
-        bg2.style.backgroundImage = `url(../img/${photos[random]})`;
+        bg2.style.backgroundImage = `url(./img/${photos[random]})`;
 
 
         bg2.classList.remove("fade");
